@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="'진짜 과일'을 판매하는 제철 과일 판매소">
+    <link rel="icon" type="image/png" href="market_favicon.png">
+    <title>판매자 정보 & 구매 문의 : 제철 과일 판매소</title>
+    <!--  css -->
+   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> <!-- css 디폴트 값 리셋 코드 -->
+   <link href="css/fruitSelling_information.css" rel="stylesheet"> <!-- 작성해야할 css파일 이름-->
+   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet"><!--구글 폰트들-->
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="banner">
+        <div class="PageName">
+            <p>판매자 정보</p>
+        </div>
+    </div>
+    <div class="SellerInformation">
+          <div><img src="information_seller.jpg" alt="판매자 사진" class="sellerImage"></div>
+          <div><p class="informationOfSeller">이름 : 장진형<br>
+            판매자 연락처 : 010 - 3115 - 9046 <br>
+            농장 주소 : 경기도 용인시 처인구 모현읍 외대로 81<br> 
+            판매자 한마디 : 농약 없이 재배한 맛있는 과일만을 판매하겠습니다. </p></div>
+    </div>
+
+
+    <div class="banner">
+        <div class="PageName">
+            <p>구매 문의</p>
+        </div>
+    </div>
+<form action="example.php" method="post" name="buyingInformation">
+<div class="Sending">
+    <div class="name">
+        <p>구매 문의 :</p>
+    </div>
+    <div>
+        <textarea name="buy" placeholder="성함과 배송지, 구매자 연락처와 주문 관련한 기타 사항들을 적어주세요" class="sending"></textarea>
+    </div>
+    <div class="submit" id="submit">
+        <input type="submit" value="전송">
+    </div>
+</div>
+</form>
+     <div class="banner">
+        <div class="PageName">
+            <p>교환과 환불에 관하여</p>
+        </div>
+    </div>
+
+    <div class="Situation"> <!--구매 & 환불 부분 만들기HTML & CSS 수정 필요 X-->
+        <div class="error"><p class="Error">상품에 문제가 있는 경우</p>
+            <p class="behave">상품 수령 후 2일 이내에 사진 자료와 함께 판매자 연락처로 <br>연락 주시면 신속하게 처리 도와드리겠습니다.</p>
+        </div>
+    </div>
+
+    <div class="Situation2"> <!--교환 & 환불 부분 만들기 HTML & CSS 수정 필요 x-->
+        <div class="error"><p class="Error">교환 & 반품이 불가한 경우 </p>
+            <div class="Container_1">
+                <ul class="reasons">
+                    <li>맛, 일정 등 단순 변심의 경우</li>
+                    <li>수취인 정보 잘못 기재의 경우</li>
+                    <li>증명할 사진이 없는 경우</li>
+                    <li>수령 후 이틀 후에 연락을 주신 경우</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="Situation"> <!--보상 안내  HTML & CSS 수정 필요 O -->
+        <div class="error"><p class="Error">보상 안내</p>
+            <div class="Container_1">
+                <ul class="reasons2">
+                    <li>상품 훼손 정도에 따라 부분 환불 및 전액 환불이 가능합니다.</li>
+                    <li>훼손에 의한 손해 걱정 하실 필요 없이 구매 가능합니다.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="Situation4"> <!--구매 관련 상담 , HTML & CSS 수정 필요 X-->
+        <div class="error"><p class="Error">구매 관련 상담 안내</p>
+            <p class="behave">판매자의 연락처로 오전 10시 ~ 오후 6시 사이에<br>
+                ( 단, 오후 12시 ~ 오후 2시 사이에는 문자만 남겨주세요) <br>
+                전화나 문자를 주시면 친절하고 빠르게 상담해드리겠습니다.
+                </p>
+        </div>
+    </div>
+<p class="GoToMain"> <a href="index.html" class="return">다시 홈페이지로 돌아가기</a></p>
+    <p class="addressAndNotice">
+        주소지 : 경기도 용인시 처인구 모현읍 외대로 81<br>주의 사항 : 너무 맛있어 중독의 위험이 있으니 적당한 양의 섭취를 권합니다.  
+    </p>
+</body>
+</html>
